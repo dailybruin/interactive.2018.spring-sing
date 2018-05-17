@@ -31,7 +31,6 @@ function watchDir(project) {
 function render() {
   let data = require('./data.json');
   posts('src/article.njk', 'dev/', data['data.aml']);
-
 }
 function posts(template, output, posts) {
   for (var item in posts) {
